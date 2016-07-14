@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     /**
      * this method is called when the order button B is clicked
      */
@@ -50,8 +51,15 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(score2);
     }
 
-    public void scoreUp6(View view){
-        score2 = score2 +1;
+    public void scoreUp6(View view) {
+        score2 = score2 + 1;
+        displayForTeamB(score2);
+    }
+
+    public void reset(View view){
+        score2 = 0;
+        score = 0;
+        displayForTeamA(score);
         displayForTeamB(score2);
     }
 
